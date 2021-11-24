@@ -89,3 +89,87 @@
 
 .auto-columns .auto-item:nth-child(3n-2){grid-column: 4/5; grid-row: 1/4;}
 .auto-columns .auto-item:nth-child(3n-1){grid-column: 5/6; grid-row: 1/4;}
+
+/* grid-auto-flow :초과된 아이템을 어떻게 할것인가 (방향) */
+.auto-flow-row{grid-auto-flow: row;}  
+.auto-flow-column{grid-auto-flow:column;}
+
+
+/* grid */
+.grid-rows-columns{
+    grid: 100px 200px / 1fr 3fr;
+    /* grid-template-rows: 100px 300px; */
+    /* grid-template-columns: 1fr 3fr; */
+}
+
+.grid-grid-template{
+    grid: 
+    "header header header" 100px
+    "main main main" 200px
+    "footer footer footer" 150px
+    / 200px 300px 400px
+    ;
+}
+
+
+/* align-contert */
+.align {height: 1000px;}
+.align-start{align-content: start;}
+.align-end{align-content: end;}
+.align-center{align-content: center;}
+.align-between{align-content: space-between;}
+.align-around{align-content: space-around;}
+.align-evenly{align-content: space-evenly;}
+.align-stretch{align-content: stretch;}
+
+
+/* justify-contert */
+.justify {height: 1000px; grid-auto-flow: column;}
+.justify-start{justify-content: start;}
+.justify-end{justify-content: end;}
+.justify-center{justify-content: center;}
+.justify-between{justify-content: space-between;}
+.justify-around{justify-content: space-around;}
+.justify-evenly{justify-content: space-evenly;}
+.justify-stretch{align-content: stretch;}
+
+
+/* place-center */
+.place{height: 1000px;}
+.place-center-center{
+    place-content: center center;
+}
+
+
+/*  */
+.items{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50;
+    background-color: cornflowerblue;
+    color: white;
+    box-sizing: border-box;
+
+}
+
+/* align-items */
+.align-items-start{align-items: start;}
+.align-items-end{align-items: end;}
+.align-items-center{align-items: center;}
+.align-items-stretch{align-items: stretch;}
+.align-items-stretch .items {height: auto;}
+
+/* justify-items */
+.justify-items-start{justify-items: start;}
+.justify-items-end{justify-items: end;}
+.justify-items-center{justify-items: center;}
+.justify-items-stretch{justify-items: stretch;}
+.justify-items-stretch .items {width: auto;}
+
+/* place-item */
+.place-items-center{
+    place-items: center center;
+}
