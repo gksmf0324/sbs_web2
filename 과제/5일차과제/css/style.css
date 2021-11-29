@@ -1,0 +1,63 @@
+
+
+* {margin: 0;padding: 0;}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+section.notice{
+    padding: 80px 0;
+}
+
+/* 타이틀 */
+.page-title{margin-bottom: 60px;}
+.page-title h3{font-size: 28px; color: #333333; font-weight: bold; text-align: center;}
+
+/* 검색 */
+.board-search { padding: 15px 0; background-color: #eee;}
+.board-search .search-inner{margin: 0 auto; width: 50%;}
+.board-search .search-inner input{
+    width: 70%;
+    height: 40px;
+    font-size: 14px;
+    padding: 7px 14px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+.board-search .search-inner .btn{
+    width: 120px;
+    height: 40px;
+    padding: 7px 14px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: rgb(106, 106, 106);
+    color: white;
+    
+    cursor: pointer;
+    border: 1px solid transparent;
+
+}
+
+/* 목록 */
+.board-list {}
+.board-table{font-size: 13px; width: 100%;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+
+.board-table tr{ height: 50px;}
+.board-table th{ text-align: center;}
+.board-table tbody th{
+    padding-left: 30px; 
+    padding-right: 14px; 
+    border-top: 1px solid #eee;
+    text-align: left;
+}
+.board-table tbody td{ border-top: 1px solid#eee; text-align: center;}
+
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
